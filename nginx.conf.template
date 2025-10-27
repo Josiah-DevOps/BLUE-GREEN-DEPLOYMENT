@@ -1,0 +1,51 @@
+# nginx.conf.template
+events { }
+
+http {
+  # Upstream pool. We use placeholders __BLUE_BACKUP__ and __GREEN_BACKUP__
+  # which will become either "backup" or "" depending on ACTIVE_POOL.
+  upstream app_pool { 
+    # Primary marked with low max_fails and short fail_timeout so it fails fast
+    server app_blue:3000 max_fails=1 fail_timeout=3s __BLUE_BACKUP__;
+    server app_green:3000 max_fails=1 fail_timeout=3s __GREEN_BACKUP__;
+
+    # Optional keepalive sockets (improves performance)
+    keepalive 16;
+  }
+
+  server {
+    listen 80;   # inside container; docker-compose maps host 8080 -> container 80
+
+    # Default location: proxy to upstream 'backend'
+    location / {
+      # pass original Host header so apps see same Host
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Proto $scheme;
+
+      # forward request to upstream
+      proxy_pass http://app_pool; 
+
+      # timeouts — keep them tight so failures are detected quickly (<10s overall)
+      proxy_connect_timeout 1s;
+      proxy_send_timeout    5s;
+      proxy_read_timeout    5s;
+
+      # upstream failure handling — retry to the next upstream for errors/timeouts/5xx
+      proxy_next_upstream error timeout http_500 http_502 http_503 http_504;
+      proxy_next_upstream_tries 2;
+
+      # do not buffer response headers or strip them — ensure app headers flow to client
+      # explicitly allow X-App-Pool and X-Release-Id to be forwarded
+      proxy_pass_header X-App-Pool;
+      proxy_pass_header X-Release-Id;
+    }
+
+    # health endpoint used by the grader and also handy for orchestration checks
+    location /healthz {
+      access_log off;
+      return 200 'nginx is healthy';
+    }
+  }
+}

@@ -1,0 +1,59 @@
+version: "3.9"
+
+services:
+  app_blue:
+    image: yimikaade/wonderful:devops-stage-two
+    environment:
+      RELEASE_ID: "blue-release-001"
+      APP_POOL: "blue"
+      PORT: 3000
+    ports:
+      - "8081:3000"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:3000/healthz || exit 1"]
+      interval: 5s
+      timeout: 2s
+      retries: 3
+      start_period: 5s
+    networks:
+      - app_network
+
+  app_green:
+    image: yimikaade/wonderful:devops-stage-two
+    environment:
+      RELEASE_ID: "green-release-001"
+      APP_POOL: "green"
+      PORT: 3000
+    ports:
+      - "8082:3000"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:3000/healthz || exit 1"]
+      interval: 5s
+      timeout: 2s
+      retries: 3
+      start_period: 5s
+    networks:
+      - app_network
+
+  nginx:
+    image: nginx:1.25-alpine
+    
+    ports:
+      - "8080:80"
+    depends_on:
+      - app_blue
+      - app_green
+    networks:
+      - app_network
+    volumes:
+      - ./nginx.conf.template:/etc/nginx/nginx.conf.template:ro
+      - ./generate-nginx-conf.sh:/docker-entrypoint.d/generate-nginx-conf.sh:ro
+    environment:
+      - ACTIVE_POOL=${ACTIVE_POOL}
+    entrypoint: ["/bin/sh", "-c", "/docker-entrypoint.d/generate-nginx-conf.sh && nginx -g 'daemon off;'"]
+
+
+
+networks:
+  app_network:
+    driver: bridge
