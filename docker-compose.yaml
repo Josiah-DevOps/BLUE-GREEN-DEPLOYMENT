@@ -2,9 +2,9 @@ version: "3.9"
 
 services:
   app_blue:
-    image: yimikaade/wonderful:devops-stage-two
+    image: ${BLUE_IMAGE}
     environment:
-      RELEASE_ID: "blue-release-001"
+      RELEASE_ID: ${RELEASE_ID_BLUE}
       APP_POOL: "blue"
       PORT: 3000
     ports:
@@ -19,9 +19,9 @@ services:
       - app_network
 
   app_green:
-    image: yimikaade/wonderful:devops-stage-two
+    image: ${GREEN_IMAGE}
     environment:
-      RELEASE_ID: "green-release-001"
+      RELEASE_ID: ${RELEASE_ID_GREEN}
       APP_POOL: "green"
       PORT: 3000
     ports:
