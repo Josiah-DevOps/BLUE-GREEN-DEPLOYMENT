@@ -1,4 +1,4 @@
-#version: "3.9"
+version: "3.9"
 
 services:
   app_blue:
@@ -37,7 +37,6 @@ services:
 
   nginx:
     image: nginx:1.25-alpine
-    
     ports:
       - "8080:80"
     depends_on:
@@ -56,13 +55,13 @@ services:
   alert_watcher:
     build: .
     environment:
-        SLACK_WEBHOOK_URL: ${SLACK_WEBHOOK_URL}
-        ACTIVE_POOL: ${ACTIVE_POOL}
-        ERROR_RATE_THRESHOLD: ${ERROR_RATE_THRESHOLD:-2}
-        WINDOW_SIZE: ${WINDOW_SIZE:-200}
-        ALERT_COOLDOWN_SEC: ${ALERT_COOLDOWN_SEC:-300}
+      SLACK_WEBHOOK_URL: ${SLACK_WEBHOOK_URL}
+      ACTIVE_POOL: ${ACTIVE_POOL}
+      ERROR_RATE_THRESHOLD: ${ERROR_RATE_THRESHOLD:-2}
+      WINDOW_SIZE: ${WINDOW_SIZE:-200}
+      ALERT_COOLDOWN_SEC: ${ALERT_COOLDOWN_SEC:-300}
     volumes:
-      - ./watcher.py:/watcher.py
+      - ./watcher.py:/app/watcher.py
       - ./nginx_logs:/var/log/nginx:rw
     depends_on:
       - nginx
