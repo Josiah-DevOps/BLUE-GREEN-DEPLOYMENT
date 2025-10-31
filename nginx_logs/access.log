@@ -28,3 +28,374 @@
 172.19.0.1 - - [31/Oct/2025:06:57:44 +0000] "GET /healthz HTTP/1.1" 200 50 "-" "curl/8.5.0" pool=- release=- upstream_status=200 upstream=172.19.0.3:3000 request_time=0.002 upstream_response_time=0.002
 172.19.0.1 - - [31/Oct/2025:07:02:53 +0000] "GET / HTTP/1.1" 200 1247 "-" "curl/8.5.0" pool=- release=- upstream_status=200 upstream=172.19.0.3:3000 request_time=0.001 upstream_response_time=0.001
 172.19.0.1 - - [31/Oct/2025:07:40:56 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/8.5.0" pool=- release=- upstream_status=500, 200 upstream=172.19.0.2:3000, 172.19.0.3:3000 request_time=0.003 upstream_response_time=0.002, 0.001
+127.0.0.1 - - [31/Oct/2025:12:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:12:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:12:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:12:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:12:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:12:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:12:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:12:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:12:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:12:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:12:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:12:00:00 +0000] pool=pool1 upstream_status=500
+172.19.0.1 - - [31/Oct/2025:10:26:59 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/8.5.0" pool=- release=- upstream_status=500, 200 upstream=172.19.0.2:3000, 172.19.0.3:3000 request_time=0.017 upstream_response_time=0.010, 0.007
+172.19.0.1 - - [31/Oct/2025:10:58:11 +0000] "GET / HTTP/1.1" 200 1247 "-" "curl/8.5.0" pool=- release=- upstream_status=500, 200 upstream=172.19.0.2:3000, 172.19.0.3:3000 request_time=0.008 upstream_response_time=0.003, 0.005
+127.0.0.1 - - [31/Oct/2025:14:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:14:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:14:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:14:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:14:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool2 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool2 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool2 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:05:00 +0000] pool=pool1 upstream_status=200
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=pool1 upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:20:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+172.19.0.1 - - [31/Oct/2025:13:45:26 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/8.5.0" pool=- release=- upstream_status=500, 200 upstream=172.19.0.2:3000, 172.19.0.3:3000 request_time=0.004 upstream_response_time=0.002, 0.002
+172.19.0.1 - - [31/Oct/2025:13:46:37 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/8.5.0" pool=- release=- upstream_status=500, 200 upstream=172.19.0.2:3000, 172.19.0.3:3000 request_time=0.004 upstream_response_time=0.001, 0.002
+172.19.0.1 - - [31/Oct/2025:13:46:52 +0000] "GET /version HTTP/1.1" 200 57 "-" "curl/8.5.0" pool=- release=- upstream_status=500, 200 upstream=172.19.0.2:3000, 172.19.0.3:3000 request_time=0.003 upstream_response_time=0.001, 0.001
+127.0.0.1 - - [31/Oct/2025:12:10:00 +0000] pool=blue upstream_status=200
+127.0.0.1 - - [31/Oct/2025:12:11:00 +0000] pool=green upstream_status=500
+127.0.0.1 - - [31/Oct/2025:12:10:00 +0000] pool=blue upstream_status=200
+127.0.0.1 - - [31/Oct/2025:12:11:00 +0000] pool=green upstream_status=500
+127.0.0.1 - - [31/Oct/2025:12:10:00 +0000] pool=blue upstream_status=200
+127.0.0.1 - - [31/Oct/2025:12:10:00 +0000] pool=blue upstream_status=200
+127.0.0.1 - - [31/Oct/2025:13:00:00 +0000] pool=blue release=v2 upstream_status=200 upstream_addr=10.0.1.5:8080 request_time=0.045 upstream_response_time=0.042
+127.0.0.1 - - [31/Oct/2025:13:00:00 +0000] pool=blue release=v2 upstream_status=200 upstream_addr=10.0.1.5:8080 request_time=0.045 upstream_response_time=0.042
+127.0.0.1 - - [31/Oct/2025:13:00:00 +0000] pool=blue release=v2 upstream_status=200 upstream_addr=10.0.1.5:8080 request_time=0.045 upstream_response_time=0.042
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=green release=v3 upstream_status=500 upstream_addr=10.0.2.1:8080 request_time=0.057 upstream_response_time=0.054
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=green release=v3 upstream_status=500 upstream_addr=10.0.2.1:8080 request_time=0.057 upstream_response_time=0.054
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:30:00 +0000] pool=green release=green-v1.0.1 upstream_status=500 upstream=172.18.0.2:3000 request_time=0.006 upstream_response_time=0.003
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:31:00 +0000] pool=green release=green-v1.0.1 upstream_status=200 upstream=172.18.0.2:3000 request_time=0.004 upstream_response_time=0.002
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500
+127.0.0.1 - - [31/Oct/2025:15:00:00 +0000] pool=blue upstream_status=500

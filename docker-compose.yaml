@@ -62,7 +62,8 @@ services:
         WINDOW_SIZE: ${WINDOW_SIZE:-200}
         ALERT_COOLDOWN_SEC: ${ALERT_COOLDOWN_SEC:-300}
     volumes:
-      - nginx_logs:/var/log/nginx:rw
+      - ./watcher.py:/watcher.py
+      - ./nginx_logs:/var/log/nginx:rw
     depends_on:
       - nginx
     networks:
