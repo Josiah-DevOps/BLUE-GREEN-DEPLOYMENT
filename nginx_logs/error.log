@@ -1,0 +1,6 @@
+2025/10/31 01:52:41 [emerg] 9#9: the closing bracket in "upstream_http_x_app_pool" variable is missing in /etc/nginx/nginx.conf:10
+2025/10/31 01:53:23 [emerg] 9#9: the closing bracket in "upstream_http_x_app_pool" variable is missing in /etc/nginx/nginx.conf:10
+2025/10/31 05:53:41 [emerg] 9#9: unknown "active_pool" variable
+2025/10/31 05:54:22 [emerg] 9#9: unknown "active_pool" variable
+2025/10/31 06:02:42 [emerg] 9#9: unknown "active_pool" variable
+2025/10/31 06:23:54 [emerg] 9#9: unknown "active_pool" variable

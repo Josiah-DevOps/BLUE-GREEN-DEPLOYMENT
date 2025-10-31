@@ -1,4 +1,4 @@
-version: "3.9"
+#version: "3.9"
 
 services:
   app_blue:
@@ -48,12 +48,29 @@ services:
     volumes:
       - ./nginx.conf.template:/etc/nginx/nginx.conf.template:ro
       - ./generate-nginx-conf.sh:/docker-entrypoint.d/generate-nginx-conf.sh:ro
+      - ./nginx_logs:/var/log/nginx
     environment:
       - ACTIVE_POOL=${ACTIVE_POOL}
     entrypoint: ["/bin/sh", "-c", "/docker-entrypoint.d/generate-nginx-conf.sh && nginx -g 'daemon off;'"]
 
-
+  alert_watcher:
+    build: .
+    environment:
+        SLACK_WEBHOOK_URL: ${SLACK_WEBHOOK_URL}
+        ACTIVE_POOL: ${ACTIVE_POOL}
+        ERROR_RATE_THRESHOLD: ${ERROR_RATE_THRESHOLD:-2}
+        WINDOW_SIZE: ${WINDOW_SIZE:-200}
+        ALERT_COOLDOWN_SEC: ${ALERT_COOLDOWN_SEC:-300}
+    volumes:
+      - nginx_logs:/var/log/nginx:rw
+    depends_on:
+      - nginx
+    networks:
+      - app_network
 
 networks:
   app_network:
     driver: bridge
+
+volumes:
+  nginx_logs:

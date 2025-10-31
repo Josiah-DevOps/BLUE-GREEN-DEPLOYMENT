@@ -13,6 +13,18 @@ http {
     keepalive 16;
   }
 
+  
+    # Custom log format to include pool, release, upstream info
+    log_format custom '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" '
+                      'pool=$http_x_app_pool '
+                      'release=$http_x_release_id '
+                      'upstream_status=$upstream_status upstream=$upstream_addr '
+                      'request_time=$request_time upstream_response_time=$upstream_response_time';
+
+    access_log /var/log/nginx/access.log custom;
+
   server {
     listen 80;   # inside container; docker-compose maps host 8080 -> container 80
     
